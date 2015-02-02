@@ -1,3 +1,8 @@
 [submodule "themes/pure"]
 	path = themes/pure
 	url = git@github.com:ocae/pure.git
+	branch = master
+[submodule "plugins"]
+	path = plugins
+	url = git@github.com:ocae/pelican-plugins.git
+	branch = master
