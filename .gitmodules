@@ -6,3 +6,7 @@
 	path = plugins
 	url = git@github.com:ocae/pelican-plugins.git
 	branch = master
+[submodule "content/changyuheng"]
+	path = content/changyuheng
+	url = git@github.com:changyuheng/changyuheng.github.io.git
+	branch = content
