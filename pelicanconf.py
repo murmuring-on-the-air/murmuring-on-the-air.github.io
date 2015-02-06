@@ -38,6 +38,22 @@ DEFAULT_PAGINATION = 4
 USE_FOLDER_AS_CATEGORY = False
 DISPLAY_CATEGORIES_ON_MENU = False
 
+# - URL settings
+ARTICLE_URL = 'post/{slug}/'
+ARTICLE_SAVE_AS = 'post/{slug}/index.html'
+AUTHOR_URL = 'author/{slug}/'
+AUTHOR_SAVE_AS = 'author/{slug}/index.html'
+CATEGORY_URL = 'category/{slug}/'
+CATEGORY_SAVE_AS = 'category/{slug}/index.html'
+PAGE_URL = 'page/{slug}/'
+PAGE_SAVE_AS = 'page/{slug}/index.html'
+TAG_URL = 'tag/{slug}/'
+TAG_SAVE_AS = 'tag/{slug}/index.html'
+PAGINATION_PATTERNS = (
+    (1, '{base_name}/', '{base_name}/index.html'),
+    (2, '{base_name}/folio/{number}/', '{base_name}/folio/{number}/index.html'),
+)
+
 # Plug-in settings
 PLUGIN_PATHS = ['plugins']
 PLUGINS = [
