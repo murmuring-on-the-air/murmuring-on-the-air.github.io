@@ -29,14 +29,15 @@ AUTHOR_FEED_RSS = None
 # SOCIAL = (('You can add links in your config file', '#'),
           # ('Another social link', '#'),)
 
-DEFAULT_PAGINATION = 4
+DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
 # Basic settings
-USE_FOLDER_AS_CATEGORY = False
+DIRECT_TEMPLATES = ('index', 'authors', 'archives')
 DISPLAY_CATEGORIES_ON_MENU = False
+USE_FOLDER_AS_CATEGORY = False
 
 # - URL settings
 ARTICLE_URL = 'post/{slug}/'
@@ -58,7 +59,6 @@ PAGINATION_PATTERNS = (
 PLUGIN_PATHS = ['plugins']
 PLUGINS = [
     'assets',
-    'sitemap',
     'gravatar',
     'render_math',
 ]
