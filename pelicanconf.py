@@ -35,12 +35,11 @@ DEFAULT_PAGINATION = 10
 #RELATIVE_URLS = True
 
 # Basic settings
-# ARTICLE_PATHS = ['changyuheng']
-# STATIC_PATHS = ['changyuheng']
+ARTICLE_PATHS = ['changyuheng']
+STATIC_PATHS = ['changyuheng']
 DIRECT_TEMPLATES = ('index', 'authors', 'archives')
 DISPLAY_CATEGORIES_ON_MENU = False
 USE_FOLDER_AS_CATEGORY = False
-RELATIVE_URLS = True
 
 # - URL settings
 ARTICLE_URL = 'post/{slug}/'
