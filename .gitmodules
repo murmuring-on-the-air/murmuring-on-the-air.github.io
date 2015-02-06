@@ -9,4 +9,4 @@
 [submodule "content/changyuheng"]
 	path = content/changyuheng
 	url = git@github.com:changyuheng/changyuheng.github.io.git
-	branch = content
+	branch = mota
