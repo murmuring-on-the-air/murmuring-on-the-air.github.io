@@ -1,10 +1,10 @@
 [submodule "themes/pure"]
 	path = themes/pure
-	url = git@github.com:ocae/pure.git
+	url = git@github.com:murmuring-on-the-air/pure.git
 	branch = master
 [submodule "plugins"]
 	path = plugins
-	url = git@github.com:ocae/pelican-plugins.git
+	url = git@github.com:murmuring-on-the-air/pelican-plugins.git
 	branch = master
 [submodule "content/changyuheng"]
 	path = content/changyuheng
