@@ -37,6 +37,7 @@ DEFAULT_PAGINATION = 10
 # Basic settings
 ARTICLE_PATHS = ['changyuheng']
 STATIC_PATHS = ['changyuheng']
+IGNORE_FILES = ['.git*']
 DIRECT_TEMPLATES = ('index', 'authors', 'archives')
 DISPLAY_CATEGORIES_ON_MENU = False
 USE_FOLDER_AS_CATEGORY = False
