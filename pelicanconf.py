@@ -70,7 +70,7 @@ PLUGINS = [
 THEME = 'themes/pure'
 
 # Theme pure
-COVER_IMG_URL = 'http://i.imgur.com/rdpkAUi.jpg'
+COVER_IMG_URL = 'theme/image/taipei-101.jpg'
 SOCIAL = (
     ('rss', 'feeds/all.atom.xml'),
 )
