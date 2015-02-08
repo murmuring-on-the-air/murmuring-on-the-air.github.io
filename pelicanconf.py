@@ -71,7 +71,7 @@ FB_APP_ID = '589165741186066'
 THEME = 'themes/pure'
 
 # Theme pure
-COVER_IMG_URL = 'theme/image/Gpx-SP-090-2560.jpg'
+COVER_IMG_URL = '/theme/image/Gpx-SP-090-2560.jpg'
 SOCIAL = (
     ('rss', 'feeds/all.atom.xml'),
 )
