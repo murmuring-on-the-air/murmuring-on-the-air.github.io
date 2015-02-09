@@ -67,7 +67,6 @@ PLUGINS = [
 ]
 
 # Theme
-FB_APP_ID = '589165741186066'
 THEME = 'themes/pure'
 
 # Theme pure
