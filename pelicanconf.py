@@ -36,7 +36,10 @@ DEFAULT_PAGINATION = 10
 
 # Basic settings
 ARTICLE_PATHS = ['changyuheng']
-STATIC_PATHS = ['changyuheng']
+STATIC_PATHS = [
+    'extra',
+    'changyuheng',
+]
 IGNORE_FILES = ['.git*']
 DIRECT_TEMPLATES = ('index', 'authors', 'archives')
 DISPLAY_CATEGORIES_ON_MENU = False
@@ -71,6 +74,9 @@ THEME = 'themes/pure'
 
 # Theme pure
 COVER_IMG_URL = '/theme/image/Gpx-SP-090-2560.jpg'
+EXTRA_PATH_METADATA = {
+    'extra/favicon.ico': {'path': 'favicon.ico'},
+}
 SOCIAL = (
     ('rss', '/feed/all/atom.xml'),
     ('github', 'https://github.com/murmuring-on-the-air'),
