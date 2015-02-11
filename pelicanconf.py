@@ -73,4 +73,5 @@ THEME = 'themes/pure'
 COVER_IMG_URL = '/theme/image/Gpx-SP-090-2560.jpg'
 SOCIAL = (
     ('rss', 'feeds/all.atom.xml'),
+    ('github', 'https://github.com/murmuring-on-the-air'),
 )
