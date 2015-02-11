@@ -13,8 +13,10 @@ from pelicanconf import *
 SITEURL = ''
 RELATIVE_URLS = False
 
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
+FEED_ALL_ATOM = 'feed/all/atom.xml'
+AUTHOR_FEED_ATOM = 'feed/author/%s/atom.xml'
+CATEGORY_FEED_ATOM = 'feed/category/%s/atom.xml'
+TAG_FEED_ATOM = 'feed/tag/%s/atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
 
