@@ -73,7 +73,6 @@ PLUGINS = [
 THEME = 'themes/pure'
 
 # Theme pure
-COVER_IMG_URL = '/theme/image/Gpx-SP-090-2560.jpg'
 EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'},
 }
