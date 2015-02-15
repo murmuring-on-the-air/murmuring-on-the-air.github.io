@@ -1,15 +1,28 @@
 language: python
 python:
   - "3.4"
-# command to install dependencies
-install: "pip install -r requirements.txt"
-# command to run tests
-script: "make publish"
+cache: pip
 
 # Handle git submodules yourself
 git:
   submodules: false
-# Use sed to replace the SSH URL with the public URL, then initialize submodules
+
 before_install:
   - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
   - git submodule update --init --recursive
+
+# command to install dependencies
+install: "pip install -r requirements.txt"
+
+before_script:
+  - git config --global user.name 'Travis CI'
+  - git config --global user.email 'travis-ci@travis-ci.org'
+
+# command to run tests
+script: "make publish"
+
+# Use sed to replace the SSH URL with the public URL, then initialize submodules
+
+after_success:
+  - ghp-import -m "Automatically generated Pelican site by Travis CI" -b master output
+  - git push -fq https://${DEPLOY_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git master
