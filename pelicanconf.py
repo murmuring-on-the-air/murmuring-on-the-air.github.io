@@ -44,6 +44,7 @@ IGNORE_FILES = ['.git*']
 DIRECT_TEMPLATES = ('index', 'authors', 'archives')
 DISPLAY_CATEGORIES_ON_MENU = False
 USE_FOLDER_AS_CATEGORY = False
+DEFAULT_DATE_FORMAT = '%-m/%-d/%Y'
 
 # - URL settings
 ARTICLE_URL = 'post/{slug}/'
