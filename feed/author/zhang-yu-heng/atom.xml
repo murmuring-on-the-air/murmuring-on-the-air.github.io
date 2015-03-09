@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>MotA</title><link href="/" rel="alternate"></link><link href="/feed/author/zhang-yu-heng/atom.xml" rel="self"></link><id>/</id><updated>2015-03-05T20:00:00+08:00</updated><entry><title>糟糕的程式設計師有哪些招牌特質？</title><link href="/post/zao-gao-de-cheng-shi-she-ji-shi-you-na-xie-zhao-pai-te-zhi/" rel="alternate"></link><updated>2015-03-05T20:00:00+08:00</updated><author><name>張昱珩</name></author><id>tag:,2015-03-05:post/zao-gao-de-cheng-shi-she-ji-shi-you-na-xie-zhao-pai-te-zhi/</id><summary type="html">&lt;p&gt;在 &lt;a href="http://www.quora.com/"&gt;Quora&lt;/a&gt; 上看到一篇不錯的文章，原文為 &lt;a href="http://www.quora.com/What-are-the-characteristics-of-a-bad-software-engineer/answer/Nachiket-Naik"&gt;What are the characteristics of a bad software engineer?&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;以下為筆者翻譯的版本，在 Quora 的授權條款下，譯文採&lt;a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW"&gt;創用 CC 4.0 姓名標示&lt;/a&gt;授權，轉載請註名原文出處及譯者姓名。原作保留收回授權的權利。&lt;/p&gt;
+&lt;p&gt;以我個人的經驗，糟糕的程式設計師具有以下這些特質：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Stack Overflow 機器人：這種人遇到問題時，會靈活地使用 Google 搜尋，並採用所找到的第一個結果（按：好的答案通常在 Stack Overflow 上）。&lt;/p&gt;
+&lt;p&gt;問題不在於從 Stack Overflow 上抄答案回來用，因為 Stack Overflow 上面的資料確實比多數官方手冊來的豐富與完整。所以請不要誤會我的意思，上網找答案就算不是最棒的途徑也屬上上策。問題在於不加理解就機械化地採用網路上的答案，甚至也不管適不適用於自己的問題。許多人居然會覺得論壇上的說法比他們眼前的程式碼更可靠。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;我不是測試人員：我不需要測試自己的程式碼，那是測試人員的工作。&lt;/p&gt;
+&lt;p&gt;我不認為這種態度在這個敏捷開發方法成熟的時代已經式微。還是有一些原因造成他們不願改變習慣去測試自己的程式碼。其中一部分來自於對設定測試環境沒有興趣，另一部分是對測試這門學問沒有通盤的認識。（還有一部分是開發人員社群對測試人員存有不便明說的輕蔑。）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;討厭手冊：有些人好像認為手冊必須要押韻，而他們沒有那種文學素養，所以那自然不會是他們的工作。&lt;/p&gt;
+&lt;p&gt;一點淺見：這是活躍的程式計畫的頭號敵人。好的程式不是那種酷炫功能多如繁星的，而是那種具備一些多數人需要的好功能且程式碼持續被許多開發人員閱讀、修改和更新的。這類不喜歡技術交流和精確、詳盡的手冊的開發人員，是公司邁向成功的最大阻力。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;程式碼很醜：我的程式碼可以跑，但是：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;我喜歡為變數取名叫 x、flag、str、arr 等等。&lt;/li&gt;
+&lt;li&gt;我絕大多數的程式碼都集中在一個很長很長的函式裡。&lt;/li&gt;
+&lt;li&gt;沒有縮排。&lt;/li&gt;
+&lt;li&gt;沒有一致的風格和規則。&lt;/li&gt;
+&lt;li&gt;到處都是全域變數。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;這一項是最令我困擾的。也不是說程式寫得不好啦，這裡面還是有可能會有超猛的程式碼。但我打個比方，如果一串鑽石項鍊掛在像酷斯拉那麼大的超巨型噁心怪蟲的屍體上被埋葬於地底，就再也不會有人找到它了。就算被找到，也不會有人想要清理它甚或戴上它。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;短線投機客：他會不斷地寫出程式給你，但是不會嘗試深入瞭解問題，對程式應用領域的背景知識也全無興趣。&lt;/p&gt;
+&lt;p&gt;給他一些工作，他就算加班也會使命必達地交給你一個會動的程式。但也僅止於此。有時候開發人員具備一些自私的心態，促使他不只關心截止日期，也想從處理的事物中學到東西是很重要的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;切割達人：&lt;/p&gt;
+&lt;p&gt;「那不是我做的。」&lt;br /&gt;
+「這看起來真糟糕。」&lt;br /&gt;
+「不是我的問題。」&lt;br /&gt;
+「這不是我修改的程式碼造成的問題，而是用到我的程式碼的人沒寫對。」&lt;br /&gt;
+「我超討厭這個（一天要講十遍）。」&lt;br /&gt;
+「這我修不好，請去把寫這程式的人找來親自處理。」當初寫出錯誤的人已經離職了，不知道什麼時候會輪到你？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;夜郎自大：「我的方法」或「這才是王道」是他們的座右銘。&lt;/p&gt;
+&lt;p&gt;但他說來說去都是在比較他的想法和你的想法，而不是這個案子的規格。不然就是拿你的解法和他的解法做比較，隨之而來的就是彼此間的爭論。有時候他們會一直不斷挑剔你的程式碼，因為就算你的程式碼會動、通過測試、看起來也很工整，仍舊令他們感到不舒服。這種人是開發效率的瓶頸，而且通常抗壓性很差。他們對團隊其實沒什麼幫助，雖然他們很可能是資深的開發人員。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;固步自封：例如當 Java 的程式設計師聽到必須要用 Python 來寫一支程式，馬上就會石化給你看。&lt;/p&gt;
+&lt;p&gt;有些人對於學習新事物感到很痛苦，有些人則很怕寫東西進資料庫。他們會用盡一切方法來避免離開自己的舒適圈，此外有些迷信也使得他們不敢碰某些特定領域的東西。以我自己的經驗來說，這種現象在新手中是很常見沒錯，但一個好的開發人員即便在他們不熟悉的領域也樂於探索。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;粗心：忘記備份、同一個案子的程式碼有很多版本分別放在不同的資料夾、在產品版本的程式中印出開發用的除錯訊息等等。&lt;/p&gt;
+&lt;p&gt;這是另一個常見的新手現象，在他的經驗值提高後就會有所改善。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;懶惰的假高手：他們對能夠透過一些特殊的技巧讓程式運作感到自豪，會用一些神奇的方法來解決看起來很複雜的問題。&lt;/p&gt;
+&lt;p&gt;不過根據我的經驗，這些招式十有八九都只是化妝術。那些怪招都嘛很爛，因為不知道什麼時候會爆炸，而且之後在修複、重構上花的時間會比現在一次做好還要多。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</summary><category term="quora"></category><category term="translation"></category></entry><entry><title>佈景主題的 license</title><link href="/post/bu-jing-zhu-ti-de-license/" rel="alternate"></link><updated>2015-02-08T00:00:00+08:00</updated><author><name>張昱珩</name></author><id>tag:,2015-02-08:post/bu-jing-zhu-ti-de-license/</id><summary type="html">&lt;img alt="" src="/post/bu-jing-zhu-ti-de-license/asuka-langley-soryu.jpg" /&gt;
+&lt;p&gt;剛才突然發現，我們用的這個佈景主題 &lt;a class="reference external" href="https://github.com/PurePelicanTheme/pure"&gt;pure&lt;/a&gt; 居然是 &lt;a class="reference external" href="http://www.wikiwand.com/en/GNU_General_Public_License"&gt;GPLv3&lt;/a&gt; 授權的！&lt;/p&gt;
+</summary><category term="blog"></category></entry><entry><title>撰寫說明</title><link href="/post/zhuan-xie-shuo-ming/" rel="alternate"></link><updated>2015-02-06T23:44:00+08:00</updated><author><name>張昱珩</name></author><id>tag:,2015-02-06:post/zhuan-xie-shuo-ming/</id><summary type="html">&lt;img alt="" src="/post/zhuan-xie-shuo-ming/pop.jpg" /&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p class="first"&gt;cd 到部落格的根目錄&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;載入 venv 目錄中的虛擬環境&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;source &lt;/span&gt;venv/bin/activate
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;cd 到文章 source code 的目錄&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;content/&lt;span class="o"&gt;{&lt;/span&gt;username&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;開一個目錄來裝文章並切進去&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;mkdir 2015-02-06-hello-world
+&lt;span class="nb"&gt;cd &lt;/span&gt;2015-02-06-hello-world
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;創建文章 (支援 Markdown 和 reST，這邊以 Markdown 為例) 並開始編輯&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;touch 2015-02-06-hello-world.md
+editor 2015-02-06-hello-world.md
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;填寫文章的 metadata，接著開始撰內容&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;title: 這是標題
+date: 2015-02-06 23:24
+authors: 作者的名字
+summary: 副標題
+tags: 用 , 分隔的標籤們
+about_author: 簡短的作者介紹
+email: 作者的 email
+
+這是文章內容！
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;寫完之後記得存檔，然後回到部落格根目錄生成 html&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;make html
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;在自己的電腦上開一個 HTTP server 來看看結果&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;make serve
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;用瀏覽器打開 &lt;a class="reference external" href="http://localhost:8000/"&gt;http://localhost:8000/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Ctrl-c 中止 server 執行&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;到文章所在的目錄把文章 commit 並 push，再到部落格根目錄把文章 repo 的變動 commit 並 push&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;content/&lt;span class="o"&gt;{&lt;/span&gt;username&lt;span class="o"&gt;}&lt;/span&gt;
+git commit -am &lt;span class="s2"&gt;&amp;quot;My super post&amp;quot;&lt;/span&gt;
+git push
+&lt;span class="nb"&gt;cd&lt;/span&gt; ../..
+git commit -am &lt;span class="s2"&gt;&amp;quot;Update {username}&amp;#39;s post&amp;quot;&lt;/span&gt;
+git push
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;更多說明：&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://docs.getpelican.com/en/3.5.0/content.html"&gt;官方說明&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;作者文章的 &lt;a class="reference external" href="https://github.com/changyuheng/changyuheng.github.io/tree/mota"&gt;source code&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</summary><category term="blog"></category></entry><entry><title>本部落格開發、撰寫環境安裝說明</title><link href="/post/ben-bu-luo-ge-kai-fa-zhuan-xie-huan-jing-an-zhuang-shuo-ming/" rel="alternate"></link><updated>2015-02-06T23:24:00+08:00</updated><author><name>張昱珩</name></author><id>tag:,2015-02-06:post/ben-bu-luo-ge-kai-fa-zhuan-xie-huan-jing-an-zhuang-shuo-ming/</id><summary type="html">&lt;p&gt;&lt;img alt="" src="/post/ben-bu-luo-ge-kai-fa-zhuan-xie-huan-jing-an-zhuang-shuo-ming/ayanami-rei.jpg" /&gt;&lt;/p&gt;
+&lt;h2&gt;安裝開發環境&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;在想要的目錄把部落格的 &lt;a href="https://github.com/murmuring-on-the-air/murmuring-on-the-air.github.io"&gt;repo&lt;/a&gt; 遞迴地 clone 回來&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;git clone --recursive git@github.com:murmuring-on-the-air/murmuring-on-the-air.github.io.git
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;cd 進 clone 回來的 repo 目錄&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安裝本部落格用的靜態網站產生器 &lt;a href="http://docs.getpelican.com/en/3.5.0/install.html"&gt;Pelican&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;首先用 Python 的 &lt;a href="https://docs.python.org/3/library/venv.html"&gt;venv&lt;/a&gt; 初始化一個虛擬環境，其中 &lt;code&gt;pyvenv venv&lt;/code&gt; 是在當前目錄建立一個名為 &lt;code&gt;venv&lt;/code&gt; 的目錄作為 &lt;a href="https://docs.python.org/3/library/venv.html"&gt;venv&lt;/a&gt; 所需工作目錄之用，&lt;code&gt;source venv/bin/activate&lt;/code&gt; 則是載入這個 &lt;code&gt;venv&lt;/code&gt; 的虛擬環境。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;pyvenv venv
+&lt;span class="nb"&gt;source &lt;/span&gt;venv/bin/activate
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;目前的 Ubuntu 14.04 中的 venv 套件是壞的，用這個版本發行版的讀者，若發現上面的指令執行不正常，請改用下面的方法&lt;a href="http://askubuntu.com/q/488529"&gt;手動安裝&lt;/a&gt;：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;pyvenv-3.4 --without-pip venv
+&lt;span class="nb"&gt;source&lt;/span&gt; ./venv/bin/activate
+wget https://pypi.python.org/packages/source/s/setuptools/setuptools-3.4.4.tar.gz
+tar -vzxf setuptools-3.4.4.tar.gz
+&lt;span class="nb"&gt;cd &lt;/span&gt;setuptools-3.4.4
+python setup.py install
+&lt;span class="nb"&gt;cd&lt;/span&gt; ..
+wget https://pypi.python.org/packages/source/p/pip/pip-1.5.6.tar.gz
+tar -vzxf pip-1.5.6.tar.gz
+&lt;span class="nb"&gt;cd &lt;/span&gt;pip-1.5.6
+python setup.py install
+&lt;span class="nb"&gt;cd&lt;/span&gt; ..
+deactivate
+rm -rf setuptools-3.4.4* pip-1.5.6*
+&lt;span class="nb"&gt;source&lt;/span&gt; ./venv/bin/activate
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安裝 &lt;a href="http://docs.getpelican.com/en/3.5.0/install.html"&gt;Pelican&lt;/a&gt; 和他相依的 library&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;pip3 install -r requirements.txt
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h2&gt;安裝撰寫環境&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;在自己的 GitHub 或是任何 Git hosting 開一個 repo，以便存放文章的 source code&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在自己的電腦上，cd 到部落格開發環境的根目錄，把剛開好的 repo 加進部落格的 repo 中。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;git submodule add --branch &lt;span class="o"&gt;{&lt;/span&gt;branch 名稱&lt;span class="o"&gt;}&lt;/span&gt;  &lt;span class="o"&gt;{&lt;/span&gt;repo 位置&lt;span class="o"&gt;}&lt;/span&gt; content/&lt;span class="o"&gt;{&lt;/span&gt;自己的 username&lt;span class="o"&gt;}&lt;/span&gt;
+git commit content/&lt;span class="o"&gt;{&lt;/span&gt;自己的 username&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;範例：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;git submodule add --branch mota git@github.com:changyuheng/changyuheng.github.io.git content/changyuheng
+git commit content/changyuheng
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;/ol&gt;</summary><category term="blog"></category></entry></feed>

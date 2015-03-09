@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MotA, ">
+
+        <link rel="alternate"  href="/feed/all/atom.xml" type="application/atom+xml" title="MotA Full Atom Feed"/>
+
+        <title>本部落格開發、撰寫環境安裝說明 // MotA // </title>
+
+
+    <link rel="stylesheet" href="/theme/css/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/theme/css/pure.css">
+    <link rel="stylesheet" href="/theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+</head>
+
+<body>
+        <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              appId      : '589165741186066',
+              xfbml      : true,
+              version    : 'v2.2'
+            });
+          };
+
+          (function(d, s, id){
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) {return;}
+             js = d.createElement(s); js.id = id;
+             js.src = "//connect.facebook.net/en_US/sdk.js";
+             fjs.parentNode.insertBefore(js, fjs);
+           }(document, 'script', 'facebook-jssdk'));
+        </script>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="/author/zhang-yu-heng/" title="See posts by 張昱珩">
+                        <img class="article-avatar" alt="張昱珩" src="http://www.gravatar.com/avatar/ba76e97a86478b5b3057487e9ae6c338?s=120">
+                </a>
+                <h2 class="article-info">張昱珩</h2>
+                <small class="about-author">一位 Android app 開發人員</small>
+                <p>2/6/2015</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>本部落格開發、撰寫環境安裝說明</h1>
+                        <p class="post-meta">
+                                <a class="post-category" href="/tag/blog/">blog</a>
+                        </p>
+<div class="fb-like"
+    data-layout="button_count"
+    data-share="true">
+</div>                </header>
+            </section>
+            <p><img alt="" src="/post/ben-bu-luo-ge-kai-fa-zhuan-xie-huan-jing-an-zhuang-shuo-ming/ayanami-rei.jpg" /></p>
+<h2>安裝開發環境</h2>
+<ol>
+<li>
+<p>在想要的目錄把部落格的 <a href="https://github.com/murmuring-on-the-air/murmuring-on-the-air.github.io">repo</a> 遞迴地 clone 回來</p>
+<div class="highlight"><pre>git clone --recursive git@github.com:murmuring-on-the-air/murmuring-on-the-air.github.io.git
+</pre></div>
+
+
+</li>
+<li>
+<p>cd 進 clone 回來的 repo 目錄</p>
+</li>
+<li>
+<p>安裝本部落格用的靜態網站產生器 <a href="http://docs.getpelican.com/en/3.5.0/install.html">Pelican</a></p>
+<ol>
+<li>
+<p>首先用 Python 的 <a href="https://docs.python.org/3/library/venv.html">venv</a> 初始化一個虛擬環境，其中 <code>pyvenv venv</code> 是在當前目錄建立一個名為 <code>venv</code> 的目錄作為 <a href="https://docs.python.org/3/library/venv.html">venv</a> 所需工作目錄之用，<code>source venv/bin/activate</code> 則是載入這個 <code>venv</code> 的虛擬環境。</p>
+<div class="highlight"><pre>pyvenv venv
+<span class="nb">source </span>venv/bin/activate
+</pre></div>
+
+
+<p>目前的 Ubuntu 14.04 中的 venv 套件是壞的，用這個版本發行版的讀者，若發現上面的指令執行不正常，請改用下面的方法<a href="http://askubuntu.com/q/488529">手動安裝</a>：</p>
+<div class="highlight"><pre>pyvenv-3.4 --without-pip venv
+<span class="nb">source</span> ./venv/bin/activate
+wget https://pypi.python.org/packages/source/s/setuptools/setuptools-3.4.4.tar.gz
+tar -vzxf setuptools-3.4.4.tar.gz
+<span class="nb">cd </span>setuptools-3.4.4
+python setup.py install
+<span class="nb">cd</span> ..
+wget https://pypi.python.org/packages/source/p/pip/pip-1.5.6.tar.gz
+tar -vzxf pip-1.5.6.tar.gz
+<span class="nb">cd </span>pip-1.5.6
+python setup.py install
+<span class="nb">cd</span> ..
+deactivate
+rm -rf setuptools-3.4.4* pip-1.5.6*
+<span class="nb">source</span> ./venv/bin/activate
+</pre></div>
+
+
+</li>
+<li>
+<p>安裝 <a href="http://docs.getpelican.com/en/3.5.0/install.html">Pelican</a> 和他相依的 library</p>
+<div class="highlight"><pre>pip3 install -r requirements.txt
+</pre></div>
+
+
+</li>
+</ol>
+</li>
+</ol>
+<p><br /></p>
+<h2>安裝撰寫環境</h2>
+<ol>
+<li>
+<p>在自己的 GitHub 或是任何 Git hosting 開一個 repo，以便存放文章的 source code</p>
+</li>
+<li>
+<p>在自己的電腦上，cd 到部落格開發環境的根目錄，把剛開好的 repo 加進部落格的 repo 中。</p>
+<div class="highlight"><pre>git submodule add --branch <span class="o">{</span>branch 名稱<span class="o">}</span>  <span class="o">{</span>repo 位置<span class="o">}</span> content/<span class="o">{</span>自己的 username<span class="o">}</span>
+git commit content/<span class="o">{</span>自己的 username<span class="o">}</span>
+</pre></div>
+
+
+<p>範例：</p>
+<div class="highlight"><pre>git submodule add --branch mota git@github.com:changyuheng/changyuheng.github.io.git content/changyuheng
+git commit content/changyuheng
+</pre></div>
+
+
+</li>
+</ol>
+            <div class="hr"></div>
+            <a href="#" class="go-top">Go Top</a>
+<div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = "murmuring-on-the-air"; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div><footer class="footer">
+    <p>&copy; MotA &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>

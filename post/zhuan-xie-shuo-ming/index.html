@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MotA, ">
+
+        <link rel="alternate"  href="/feed/all/atom.xml" type="application/atom+xml" title="MotA Full Atom Feed"/>
+
+        <title>撰寫說明 // MotA // </title>
+
+
+    <link rel="stylesheet" href="/theme/css/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/theme/css/pure.css">
+    <link rel="stylesheet" href="/theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+</head>
+
+<body>
+        <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              appId      : '589165741186066',
+              xfbml      : true,
+              version    : 'v2.2'
+            });
+          };
+
+          (function(d, s, id){
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) {return;}
+             js = d.createElement(s); js.id = id;
+             js.src = "//connect.facebook.net/en_US/sdk.js";
+             fjs.parentNode.insertBefore(js, fjs);
+           }(document, 'script', 'facebook-jssdk'));
+        </script>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="/author/zhang-yu-heng/" title="See posts by 張昱珩">
+                        <img class="article-avatar" alt="張昱珩" src="http://www.gravatar.com/avatar/ba76e97a86478b5b3057487e9ae6c338?s=120">
+                </a>
+                <h2 class="article-info">張昱珩</h2>
+                <small class="about-author">一位 Android app 開發人員</small>
+                <p>2/6/2015</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>撰寫說明</h1>
+                        <p class="post-meta">
+                                <a class="post-category" href="/tag/blog/">blog</a>
+                        </p>
+<div class="fb-like"
+    data-layout="button_count"
+    data-share="true">
+</div>                </header>
+            </section>
+            <img alt="" src="/post/zhuan-xie-shuo-ming/pop.jpg" />
+<ol class="arabic">
+<li><p class="first">cd 到部落格的根目錄</p>
+</li>
+<li><p class="first">載入 venv 目錄中的虛擬環境</p>
+<div class="highlight"><pre><span class="nb">source </span>venv/bin/activate
+</pre></div>
+</li>
+<li><p class="first">cd 到文章 source code 的目錄</p>
+<div class="highlight"><pre><span class="nb">cd </span>content/<span class="o">{</span>username<span class="o">}</span>
+</pre></div>
+</li>
+<li><p class="first">開一個目錄來裝文章並切進去</p>
+<div class="highlight"><pre>mkdir 2015-02-06-hello-world
+<span class="nb">cd </span>2015-02-06-hello-world
+</pre></div>
+</li>
+<li><p class="first">創建文章 (支援 Markdown 和 reST，這邊以 Markdown 為例) 並開始編輯</p>
+<div class="highlight"><pre>touch 2015-02-06-hello-world.md
+editor 2015-02-06-hello-world.md
+</pre></div>
+</li>
+<li><p class="first">填寫文章的 metadata，接著開始撰內容</p>
+<div class="highlight"><pre>title: 這是標題
+date: 2015-02-06 23:24
+authors: 作者的名字
+summary: 副標題
+tags: 用 , 分隔的標籤們
+about_author: 簡短的作者介紹
+email: 作者的 email
+
+這是文章內容！
+</pre></div>
+</li>
+<li><p class="first">寫完之後記得存檔，然後回到部落格根目錄生成 html</p>
+<div class="highlight"><pre>make html
+</pre></div>
+</li>
+<li><p class="first">在自己的電腦上開一個 HTTP server 來看看結果</p>
+<div class="highlight"><pre>make serve
+</pre></div>
+<p>用瀏覽器打開 <a class="reference external" href="http://localhost:8000/">http://localhost:8000/</a></p>
+</li>
+<li><p class="first">Ctrl-c 中止 server 執行</p>
+</li>
+<li><p class="first">到文章所在的目錄把文章 commit 並 push，再到部落格根目錄把文章 repo 的變動 commit 並 push</p>
+</li>
+</ol>
+<blockquote>
+<div class="highlight"><pre><span class="nb">cd </span>content/<span class="o">{</span>username<span class="o">}</span>
+git commit -am <span class="s2">&quot;My super post&quot;</span>
+git push
+<span class="nb">cd</span> ../..
+git commit -am <span class="s2">&quot;Update {username}&#39;s post&quot;</span>
+git push
+</pre></div>
+</blockquote>
+<p>更多說明：</p>
+<ul class="simple">
+<li><a class="reference external" href="http://docs.getpelican.com/en/3.5.0/content.html">官方說明</a></li>
+<li>作者文章的 <a class="reference external" href="https://github.com/changyuheng/changyuheng.github.io/tree/mota">source code</a></li>
+</ul>
+
+            <div class="hr"></div>
+            <a href="#" class="go-top">Go Top</a>
+<div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = "murmuring-on-the-air"; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div><footer class="footer">
+    <p>&copy; MotA &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>
